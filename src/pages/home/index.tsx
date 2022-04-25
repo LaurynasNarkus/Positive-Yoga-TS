@@ -9,6 +9,7 @@ import { BigText } from 'components/sections/BigText/IntroText';
 import { Program } from 'components/sections/Program/Program'
 import { Bnft } from 'components/sections/Benefit/Bnft';
 import { GetMyPlan } from 'components/buttons/OrangeButton';
+import { SuccessStories } from 'components/sections/SuccessStories/SuccessStories'
 
 
 const Home: React.FC = () => {
@@ -27,11 +28,12 @@ const Home: React.FC = () => {
 					<Header />
 					<IntroText />
 					<Program />
+					<SuccessStories />
 					<GetMyPlan />
 					<Bnft />
 					<GetMyPlan />
 					<BigText />
-					FOOOOOD
+					<Program />
 				</Box>
 			</SectionWrapper>
 		</ThemeProvider>
