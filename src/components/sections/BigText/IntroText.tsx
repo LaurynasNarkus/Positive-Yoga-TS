@@ -3,19 +3,21 @@ import styled from 'styled-components/macro';
 import { tablet } from 'styles/breakpoints';
 
 export const IntroText: React.FC = () => {
-  return (
-    <div>
-      <IntroTextW>
-        <p>
-          Over <b>52 147</b> plans ordered.
-        </p>
-      </IntroTextW>
-      <IntroTextBig>Get access to your yoga program now!</IntroTextBig>
-    </div>
+    return (
+        <div>
+        <IntroTextW>
+            <p>Over <b>52 147</b> plans ordered.</p>
+        </IntroTextW>
+        <IntroTextBig>Get access to your yoga program now!</IntroTextBig>
+        </div>
   );
 };
 
-
+export const BigText: React.FC = () => {
+  return (
+        <IntroTextBig>Start your yoga program today !</IntroTextBig>
+  );
+};
 
 const IntroTextW = styled.div`
     font-size: 1rem;
@@ -25,7 +27,8 @@ const IntroTextW = styled.div`
     font-style: normal;
 
     @media ${tablet} {
-        margin: 1rem 1rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
         font-size: 1rem;
         text-align: start;
     }
@@ -41,6 +44,7 @@ const IntroTextBig = styled.div`
     @media ${tablet} {
         text-align: start;
         margin-left: 1rem;
+        margin-top: 2rem;
         margin-bottom: 0;
     }
 `;

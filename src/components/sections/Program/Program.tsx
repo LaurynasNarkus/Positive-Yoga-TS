@@ -158,7 +158,7 @@ const ProgramW = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
-    width: 46rem;
+    width: 48rem;
     
     @media ${tablet} {
         display: flex;
@@ -202,7 +202,6 @@ const SectionTitleWrapper = styled.div`
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    margin-bottom: 2rem;
 
     @media ${tablet} {
         width: 100%;
@@ -223,14 +222,13 @@ const ButtonGetPlanWrapper = styled.div`
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 2rem;
 
     @media ${tablet} {
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        margin-top: 1rem;
     }
 `;
 
@@ -305,6 +303,11 @@ const ProgramQuestion = styled.div`
 
 const ProgramElementList = styled.div`
     width: 100%;
+    margin-top: 3rem;
+
+    @media ${tablet} {
+        margin-top: 0;
+    }
 `;
 
 const Orange = styled.span`

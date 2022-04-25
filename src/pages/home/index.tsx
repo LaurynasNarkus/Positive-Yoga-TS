@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
-//import styled from 'styled-components/macro';
+import React from 'react';
 import { Box, SectionWrapper } from 'components';
 import { useQuery } from 'styles/breakpoints';
 import { theme } from 'styles/theme';
 import { ThemeProvider } from 'styled-components/macro';
 import { Header } from 'components/sections/Header/Header';
-import { IntroText } from 'components/sections/IntroText/IntroText'
+import { IntroText } from 'components/sections/BigText/IntroText';
+import { BigText } from 'components/sections/BigText/IntroText';
 import { Program } from 'components/sections/Program/Program'
+import { Bnft } from 'components/sections/Benefit/Bnft';
+import { GetMyPlan } from 'components/buttons/OrangeButton';
 
 
 const Home: React.FC = () => {
@@ -25,6 +27,10 @@ const Home: React.FC = () => {
 					<Header />
 					<IntroText />
 					<Program />
+					<GetMyPlan />
+					<Bnft />
+					<GetMyPlan />
+					<BigText />
 					FOOOOOD
 				</Box>
 			</SectionWrapper>

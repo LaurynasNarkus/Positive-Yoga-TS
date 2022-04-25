@@ -18,10 +18,10 @@ export const ProgramElement: React.FC<AppProps> = ({
       <IconWrapper>
         <img src={icon} alt="icon" />
       </IconWrapper>
-      <div className="textContent">
+      <ContentWrapper>
         <ProgramTitle>{title}</ProgramTitle>
         <DescriptionProgram>{description}</DescriptionProgram>
-      </div>
+      </ContentWrapper>
     </ProgramElementW>
   );
 };
@@ -29,11 +29,10 @@ export const ProgramElement: React.FC<AppProps> = ({
 const ProgramElementW = styled.div`
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: start;
-    //height: 6rem;
     height: auto;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
 
     @media ${tablet} {
         margin-bottom: 1.5rem;
@@ -41,6 +40,8 @@ const ProgramElementW = styled.div`
 `;
 
 const IconWrapper = styled.div`
+    display: flex;
+    align-items: flex-start;
     margin-right: 1rem;
 
     @media ${tablet} {
@@ -49,8 +50,14 @@ const IconWrapper = styled.div`
     }
 `;
 
+const ContentWrapper = styled.div`
+    display: flex;
+    flex-direction: column;  
+`
+
 const ProgramTitle = styled.h3`
-    margin-bottom: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0.25rem;
     @media ${tablet} {
     margin-top: 0;
 }
