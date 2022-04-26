@@ -60,13 +60,13 @@ const OrangeButtonWrapper = styled.div`
     flex-direction: row;
     justify-content: center;
     width: 22rem;
-    margin: 2rem auto;
+    margin: 3rem auto;
 
     @media ${tablet} {
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: calc(100% - 2rem);
-        margin: 1rem auto;
+        margin: 2rem auto;
     }
 `;

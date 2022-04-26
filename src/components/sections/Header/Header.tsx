@@ -14,4 +14,5 @@ const HeaderW = styled.div`
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.04);
   display: flex;
   justify-content: center;
+  margin-top: 4rem;
 `;

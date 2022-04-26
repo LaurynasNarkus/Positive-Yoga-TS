@@ -62,62 +62,13 @@ const NameWrapper = styled.div`
 const LocationWrapper = styled.div`
     font-size: 0.75rem;
     color: grey;
+    margin-bottom: 0.5rem;
 `;
 
 const RateWrapper = styled.div``
 
 const ImgWrapper = styled.div``
 
-const StoryTextWrapper = styled.div``
-
-
-
-
-
-const ProgramElementW = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: start;
-    height: auto;
-    margin-bottom: 1.5rem;
-
-    @media ${tablet} {
-        margin-bottom: 1.5rem;
-    }
-`;
-
-const IconWrapper = styled.div`
-    display: flex;
-    align-items: flex-start;
-    margin-right: 1rem;
-
-    @media ${tablet} {
-        width: 3rem;
-        margin-right: 1rem;
-    }
-`;
-
-const ContentWrapper = styled.div`
-    display: flex;
-    flex-direction: column;  
-`
-
-const ProgramTitle = styled.h3`
-    margin-top: 0;
-    margin-bottom: 0.25rem;
-    @media ${tablet} {
-    margin-top: 0;
-}
-`;
-
-const DescriptionProgram = styled.p`
-    color: grey;
-    margin: 0;
-    margin-block: 0;
-
-    @media ${tablet} {
-        margin: 0;
-        margin-block: 0;
-    }
+const StoryTextWrapper = styled.div`
+margin-top: 1rem;
 `;
